@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/sign.css">
+    <style>
+        body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color:black;
+        margin: 0px;
+        padding: 0px;
+    }
+        .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 0px;
+        color: pink;
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 18px;
+        display: inline-block;    
+    }
+
+    .mid {
+        display: block;
+        width: 55%;
+        margin: 18px auto;
+        
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar a{
+    text-decoration:underline;
+    line-height: 20px;
+    color: darkgrey;
+    padding: 34px 23px
+}
+
+    /*.navbar li a {
+        color: black;
+        text-decoration:none;
+        padding: 34px 23px;
+
+  
+     navbar li a.active {
+         text-decoration: underline;
+        color: rgb(63, 55, 55);
+    } */
+
+    .navbar a:hover
+{
+    color:khaki;
+}
+
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 4px 9px;
+        background-color:black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: rgb(70, 66, 66);
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <h3>Sky Living</h3>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="cont.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn" onclick="window.open('login.html')">Login</button>
+            <button class="btn" onclick="window.open('sign.html')">Sign Up</button>
+        </div>
+    </header>
+    <div class="signupbox">
+        <h1>Sign Up</h1>
+        <h4>It's free and only takes a minute</h4>
+        <form>
+            <label>First name</label>
+            <input type="text" placeholder=""><br>
+            <label>last name</label>
+            <input type="text" placeholder=""><br>
+            <label>Email</label>
+            <input type="email" placeholder=""><br>
+            <label>Password</label>
+            <input type="password" placeholder=""><br>
+            <label>Confirm password</label>
+            <input type="paasword" placeholder=""><br>
+            <br>
+            <input type="button" value="submit">
+        </form>
+        <p>By clicking the sign up button,you agree to our <br>
+        <a href="#">Terms & condition</a> and <a href="#">policy privacy</a>
+        </p>
+    </div>
+    <p class="para-2">Already have an acount? <a href="#"> Login here</a></p>
+</body>
+</html>

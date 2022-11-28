@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+   
+    <style>
+    body {
+   margin: 0;
+    padding: 0;
+    background: #55fff9;
+    background-size: cover;
+    background-position: center;
+    font-family:cursive;
+}
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+h1{
+    margin: 0;
+     padding: 0 0 20px;   /*trlb */
+    text-align: center;
+    font-size: 22px;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+    border:none;
+    outline: none;
+    height: 40px;
+    /* background: #fb2525; */
+    /* color: #fff; */
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.loginbox input[type="submit"]
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+.loginbox a{
+    text-decoration:underline;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+.loginbox a:hover
+{
+    color: khaki;
+}
+
+
+.left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 0px;
+        color: pink;
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .right {
+        /* position: absolute;
+        right: 34px;   
+        top: 18px;
+        display: inline-block;
+        background: violet; */
+        position: absolute;
+        right: 34px;
+        top: 18px;
+        display: inline-block;   
+    }
+
+    .mid {
+        display: block;
+        width: 45%;
+        margin: 18px auto;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: black;
+        background-color: rgb(239, 14, 138);
+        text-decoration:underline;
+        padding:  25px 25px;   /*34 23*/
+        padding-top:20px;
+        padding-bottom: 20px;
+         /* padding:45 45 40 40px;  */
+         font-size: 25px;
+        font-weight:bolder;
+    }
+    
+    .btn{
+        padding: 10px 20px;
+        border-radius: 15px;
+        background-color:black;
+        color:wheat;
+        font-size:18px;
+    }
+    .btn:hover {
+        background-color: rgb(70, 66, 66);
+    }
+    .mid a:hover{
+        color: rgb(223, 202, 17);
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <h3>Sky Living</h3>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="cont.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn" onclick="window.open('login.html')">Login</button>
+            <button class="btn" onclick="window.open('sign.html')">Sign Up</button>
+        </div>
+    </header>
+  
+    <div class="loginbox">
+        <h1>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name=""placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name=""placeholder="Enter Password">
+            <input type="submit" name="" value="login">
+            <a href="#">Forgot your password?</a><br>
+            <a href="#">Don't have an account?</a>
+        </form>
+
+    </div>
+
+</body>
+</html>
