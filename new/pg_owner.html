@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+    .header{
+        display: flex;
+        background-color: blue;
+        /* margin-right: 10%; */
+    }
+    
+
+   
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 0px;
+        color:rgb(25, 221, 25);
+        /* font-size: 55px; */
+        text-align: center;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 18px;
+        display: inline-block;      
+    }
+
+    .mid {
+        display: flex;
+        width: 45%;
+        margin: 18px auto;  
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+       
+    }
+
+    .navbar li a{
+        color: white;
+        margin: 18px;
+        text-decoration: none;
+    }
+
+  
+    navbar li a.active {
+        text-decoration: underline;
+        color: rgb(63, 55, 55);
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 4px 9px;
+        margin-top:5px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 20px;
+        
+    }
+
+    .btn:hover {
+        background-color: rgb(70, 66, 66);
+    }
+
+   h1{
+        text-align: center;
+    }
+    .middle{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .middle p{
+        font-size: larger;
+        margin-top: -3%;
+        margin-left: 25%;
+    }
+    .img{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .img .btn{
+        background-color:white;
+        color: black;
+        margin-left: 90%;
+    }
+
+    .pay{
+        margin-left: 40%;  
+    }
+    .pay .form{
+        margin-right: 70%; 
+        height:250px;
+        border: 1px solid black;
+        text-align: center;
+        /* margin-top: 10%; */
+    }
+    .pay .btn{
+        background-color: green;
+        margin-left: 21%;
+    }
+    .btn1 .btn{
+    background-color: blue;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 200%;
+    text-align: center;
+    margin-left: 45%;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <h1>Sky Living</h1>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="pg_owner.html">For PG Owners</a></li>
+                <li><a href="cont.html">Contact Us</a></li>
+                <!-- <input type="text" placeholder="House TYPE.."> -->
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn" onclick="window.open('login.html')">Login</button>
+            <button class="btn"onclick="window.open('sign.html')">Sign Up</button>
+        </div>
+    </header>
+    <br><br>
+    <h1>List Your PG New User</h1><br><br>
+    <div class="middle">
+        
+        <h3>Monthly Package Details For PG Owners </h3>
+        <p>: Please list your PG in our Website to get leads for your Business to your Mobile Number on Daily basic.Our Listing Fees only Rs 999 for 1   
+             Month to get Unlimited Leads to your Mobile Number.Please fill below Form and make the Payment Online.</p>
+    </div>
+       <br><br><br>
+    <div class="img">
+
+        <img src="house1.img.jpg" height="300" width="360">
+        <img src="house2.jpg" height="300" width="360">
+        <img src="images.jpg" height="300" width="360">
+        <img src="house4.jpg" height="300" width="360">
+        <button class="btn">view more</button>
+    </div>
+      <br><br>
+    
+        <h1>Fill your details and then Proceed for Payment.</h1><br>
+    
+        <div class="pay">
+            <div class="form">
+                <!-- <div class="ab"> -->
+                    <br><br>
+            <label>name :</label>
+            <input type="text" name=""placeholder="Enter Username"><br><br>
+            <label>Email :</label>
+            <input type="password" name=""placeholder="Enter mail id"><br><br>
+            <label>Mobile :</label>
+            <input type="number" name=""placeholder="Enter mobile number"><br><br>
+        </div>
+        <button class="btn">Submit</button>
+
+       <br><br><br>
+    </div>
+     <div class="btn1">
+        <button class="btn">Pay Now</button>
+     </div>
+   
+</body>
+</html> 
